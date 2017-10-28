@@ -14,7 +14,7 @@ namespace PatternsExamples
         enum Patterns { Strategy, Observer };
         public static void Main() {
 
-            Patterns toPractice = Patterns.Strategy;
+            Patterns toPractice = Patterns.Observer;
 
             switch (toPractice) {
                 case Patterns.Strategy: run(new MiniDuckSimulator()); break;

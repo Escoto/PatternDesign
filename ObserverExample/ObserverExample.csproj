@@ -40,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDisplayElement.cs" />
+    <Compile Include="ISubject.cs" />
+    <Compile Include="IObserver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WeatherMonitoring.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyGenerics\MyGenerics.csproj">
+      <Project>{e36f0eff-595e-4c4a-8ee5-2e62b99055c5}</Project>
+      <Name>MyGenerics</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
