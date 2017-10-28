@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyGenerics;
 
 namespace DecouplingBehaviors
 {
-    public class MiniDuckSimulator
+    public class MiniDuckSimulator : IInitialStep
     {
-        static Duck mallard, model;
-        public static void Start() {
+        Duck mallard, model;
+        public void Start() {
             mallard = new MallardDuck();
             mallard.PerformQuack();
             mallard.PerformFly();

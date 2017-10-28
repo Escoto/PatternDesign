@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9B23BCB-8E30-4E4F-B586-102B33C12124}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{93788D55-9CFE-4E74-A420-CF0E4D519EC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PatternsExamples</RootNamespace>
-    <AssemblyName>PatternsExamples</AssemblyName>
+    <RootNamespace>ObserverExample</RootNamespace>
+    <AssemblyName>ObserverExample</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -29,9 +29,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,18 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Root.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DecouplingBehaviors\DecouplingBehaviors.csproj">
-      <Project>{eadf8607-f605-4a8d-8f46-359ce8b19bde}</Project>
-      <Name>DecouplingBehaviors</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ObserverExample\ObserverExample.csproj">
-      <Project>{93788d55-9cfe-4e74-a420-cf0e4d519ec3}</Project>
-      <Name>ObserverExample</Name>
-    </ProjectReference>
+    <Compile Include="WeatherMonitoring.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
