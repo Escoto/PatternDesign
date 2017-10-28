@@ -1,7 +1,10 @@
-﻿# Decoupling Behaviors  /  encapsulated behaviors
+﻿# Strategy Pattern / Decoupling Behaviors  /  Encapsulated Behaviors
 I created this library to practice how to separating what changes from what stays the same.
 
 ## NOTES
+
+The **Strategy Pattern** defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+Strategy lets the algorithm vary independently from clients that use it.
 
 ### DESIGN PRINCIPLES
 
