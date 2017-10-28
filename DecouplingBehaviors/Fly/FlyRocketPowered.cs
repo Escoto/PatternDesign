@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DecouplingBehaviors
 {
-    class Quacks : IQuackBehavior
+    public class FlyRocketPowered : IFlyBehavior
     {
-        public void Quack() {
-            Console.WriteLine("Quack!! Quack!!");
+        public void Fly() {
+            Console.WriteLine("I'm rocket powered!!");
         }
     }
 }

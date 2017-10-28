@@ -9,7 +9,7 @@ namespace DecouplingBehaviors
     class FlyNoWay : IFlyBehavior
     {
         public void Fly() {
-            Console.WriteLine("I can't fly");
+            Console.WriteLine("I can't fly :'( ");
         }
 
     }

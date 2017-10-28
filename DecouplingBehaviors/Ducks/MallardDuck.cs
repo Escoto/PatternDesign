@@ -9,11 +9,10 @@ namespace DecouplingBehaviors
     public class MallardDuck : Duck
     {
         public MallardDuck() {
-            quackBehavior = new Quack();
+            quackBehavior = new Quacks();
             flyBehavior = new FlyWithWings();
         }
-        public override void display() {
-            Console.WriteLine("I'm a real Mallar Duck.");
-        }
+        public override void Display()
+            => Console.WriteLine("I'm a real Mallar Duck.");
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DecouplingBehaviors
 {
-    interface IQuackBehavior
+    public interface IQuackBehavior
     {
         void Quack();
     }

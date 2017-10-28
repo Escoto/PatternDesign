@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DecouplingBehaviors
 {
-    interface IFlyBehavior
+    public interface IFlyBehavior
     {
         void Fly();
     }
