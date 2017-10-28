@@ -1,5 +1,5 @@
-﻿# Strategy Pattern / Decoupling Behaviors  /  Encapsulated Behaviors
-I created this library to practice how to separating what changes from what stays the same.
+﻿# The Observer Pattern
+Practicing by example the Observer pattern with a weather simulator.
 
 ## NOTES
 
