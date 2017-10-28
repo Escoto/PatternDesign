@@ -54,5 +54,8 @@
     <Compile Include="Quack\Quacks.cs" />
     <Compile Include="Quack\Squeak.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

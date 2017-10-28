@@ -18,9 +18,6 @@ namespace DecouplingBehaviors
             model.PerformFly();
             model.SetFlyBehavior(new FlyRocketPowered());
             model.PerformFly();
-
-
-            
         }
     }
 }
