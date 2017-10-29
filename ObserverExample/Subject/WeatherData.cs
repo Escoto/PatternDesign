@@ -10,6 +10,7 @@ namespace ObserverExample
     {
         private List<IObserver> observers;
         private float temp, humidity, pressure;
+
         public WeatherData() {
             observers = new List<IObserver>();
         }
