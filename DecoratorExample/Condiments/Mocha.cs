@@ -8,8 +8,6 @@ namespace DecoratorExample
 {
     public class Mocha : CondimentDecorator
     {
-        Beverage beverage;
-
         public Mocha(Beverage beverage) {
             this.beverage = beverage;
         }

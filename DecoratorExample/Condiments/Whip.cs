@@ -8,8 +8,6 @@ namespace DecoratorExample
 {
     class Whip : CondimentDecorator
     {
-        Beverage beverage;
-
         public Whip(Beverage beverage)
         {
             this.beverage = beverage;

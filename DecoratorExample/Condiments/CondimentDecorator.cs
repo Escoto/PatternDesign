@@ -8,5 +8,6 @@ namespace DecoratorExample
 {
     public abstract class CondimentDecorator : Beverage
     {
+        protected Beverage beverage;
     }
 }
