@@ -3,7 +3,7 @@
 ## Description
 I created this solution to practice and learn more about pattern design
 
-Main is inside [PatternsExamples](https://github.com/Escoto/PatternDesign/tree/master/PatternsExamples)
+Main is inside [PatternsExamples](https://github.com/Escoto/PatternDesign/tree/master/PatternsExamples) in the [Root.cs](https://github.com/Escoto/PatternDesign/blob/master/PatternsExamples/Root.cs) file.
 
 ### LEARNED DESIGN PRINCIPLES
 
