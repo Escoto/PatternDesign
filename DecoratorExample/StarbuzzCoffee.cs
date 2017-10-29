@@ -11,7 +11,22 @@ namespace DecoratorExample
     {
         public void Start()
         {
-            throw new NotImplementedException();
+            Beverage b1 = new Espresso();
+            printReceipt(b1);
+
+            Beverage b2 = new HouseBlend();
+            b2 = new Mocha(b2);
+            b2 = new Mocha(b2);
+            b2 = new Whip(b2);
+            printReceipt(b2);
+
+            Beverage b3 = new DarkRoast();
+            b3 = new Mocha(b3);
+            printReceipt(b3);
+        }
+
+        private void printReceipt(Beverage b) {
+            Console.WriteLine($"{ b.GetDescription() } ${ b.Cost() }");
         }
     }
 }

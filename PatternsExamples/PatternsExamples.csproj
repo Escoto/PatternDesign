@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DecoratorExample\DecoratorExample.csproj">
+      <Project>{4d2fcd03-b27d-4cde-8bb0-267f832dc636}</Project>
+      <Name>DecoratorExample</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DecouplingBehaviors\DecouplingBehaviors.csproj">
       <Project>{eadf8607-f605-4a8d-8f46-359ce8b19bde}</Project>
       <Name>DecouplingBehaviors</Name>
