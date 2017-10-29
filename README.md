@@ -3,6 +3,8 @@
 ## Description
 I created this solution to practice and learn more about pattern design
 
+Main is inside [PatternsExamples](https://github.com/Escoto/PatternDesign/tree/master/PatternsExamples)
+
 ### LEARNED DESIGN PRINCIPLES
 
 * Identify the aspects of your application that vary and separate them from what stays the same.
