@@ -40,12 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\CaliforniaPizzaFactory.cs" />
+    <Compile Include="Factories\ChicagoPizzaFactory.cs" />
+    <Compile Include="Factories\NYPizzaFactory.cs" />
     <Compile Include="Pizzas\CheesePizza.cs" />
     <Compile Include="Pizzas\GreekPizza.cs" />
     <Compile Include="Pizzas\IPizza.cs" />
+    <Compile Include="Pizzas\NotFoundPizza.cs" />
     <Compile Include="Pizzas\PepperoniPizza.cs" />
     <Compile Include="PizzaStore.cs" />
-    <Compile Include="Pizzas\SimplePizzaFactory.cs" />
+    <Compile Include="Factories\SimplePizzaFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

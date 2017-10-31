@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryExample
 {
-    public class SimplePizzaFactory
+    public static class SimplePizzaFactory
     {
         public enum PizzaType { Cheese, Greek, Pepperoni };
 
@@ -21,14 +21,14 @@ namespace FactoryExample
 
                 case PizzaType.Pepperoni:
                     return pizza<PepperoniPizza>();
+
+                default: return pizza<NotFoundPizza>();
             }
             
-            return null;
         }
 
         private static IPizza pizza<T>() where T : IPizza, new()
             => new T();
         
-
     }
 }
