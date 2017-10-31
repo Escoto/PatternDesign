@@ -42,17 +42,17 @@
   <ItemGroup>
     <Compile Include="Ducks\Duck.cs" />
     <Compile Include="Ducks\ModelDuck.cs" />
-    <Compile Include="Fly\FlyNoWay.cs" />
-    <Compile Include="Fly\FlyRocketPowered.cs" />
-    <Compile Include="Fly\FlyWithWings.cs" />
-    <Compile Include="Fly\IFlyBehavior.cs" />
+    <Compile Include="Behaviors\Fly\FlyNoWay.cs" />
+    <Compile Include="Behaviors\Fly\FlyRocketPowered.cs" />
+    <Compile Include="Behaviors\Fly\FlyWithWings.cs" />
+    <Compile Include="Behaviors\Fly\IFlyBehavior.cs" />
     <Compile Include="MiniDuckSimulator.cs" />
-    <Compile Include="Quack\IQuackBehavior.cs" />
+    <Compile Include="Behaviors\Quack\IQuackBehavior.cs" />
     <Compile Include="Ducks\MallardDuck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quack\MuteQuack.cs" />
-    <Compile Include="Quack\Quacks.cs" />
-    <Compile Include="Quack\Squeak.cs" />
+    <Compile Include="Behaviors\Quack\MuteQuack.cs" />
+    <Compile Include="Behaviors\Quack\Quacks.cs" />
+    <Compile Include="Behaviors\Quack\Squeak.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

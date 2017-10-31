@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MyGenerics;
 using DecouplingBehaviors;
 using ObserverExample;
@@ -17,7 +13,7 @@ namespace PatternsExamples
 
         public static void Main() {
 
-            Patterns toPractice = Patterns.Decorator;
+            Patterns toPractice = Patterns.Factory;
 
             switch (toPractice) {
                 case Patterns.Strategy:  run( new MiniDuckSimulator() );  break;
