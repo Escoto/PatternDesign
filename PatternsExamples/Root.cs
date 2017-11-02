@@ -19,7 +19,7 @@ namespace PatternsExamples
                 case Patterns.Strategy:  run( new MiniDuckSimulator() );  break;
                 case Patterns.Observer:  run( new WeatherMonitoring() );  break;
                 case Patterns.Decorator: run( new StarbuzzCoffee() );     break;
-                case Patterns.Factory:   run( new PizzaStore() );         break;
+                case Patterns.Factory:   run( new OrderPizza() );         break;
             }
 
             Console.ReadLine();

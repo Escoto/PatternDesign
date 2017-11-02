@@ -6,18 +6,10 @@ using System.Threading.Tasks;
 
 namespace FactoryExample
 {
-    public class PepperoniPizza : IPizza
+    public class PepperoniPizza : Pizza
     {
-        public void Prepare() { }
-
-        public void Bake() { }
-
-        public void Cut() { }
-
-        public void Box() { }
-        public string Open()
-        {
-            return "Pepperoni Pizza";
+        public PepperoniPizza() {
+            pizzaName = "Pepperoni Pizza";
         }
     }
 }

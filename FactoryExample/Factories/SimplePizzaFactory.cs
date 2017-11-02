@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace FactoryExample
 {
+
+    /**
+     * This class was ussed only for the initial example.
+     * The project muted into a more complex solution with multiple factories.
+     * 
+     */
+
     public static class SimplePizzaFactory
     {
         public enum PizzaType { Cheese, Greek, Pepperoni };
 
-        public static IPizza CreatePizza(PizzaType type)
+        public static Pizza CreatePizza(PizzaType type)
         {
             switch (type) {
                 case PizzaType.Cheese:
-                    return pizza<CheesePizza>();//new CheesePizza(); 
+                    return pizza<CheesePizza>();
 
                 case PizzaType.Greek:
                     return pizza<GreekPizza>();
@@ -27,7 +34,7 @@ namespace FactoryExample
             
         }
 
-        private static IPizza pizza<T>() where T : IPizza, new()
+        private static Pizza pizza<T>() where T : Pizza, new()
             => new T();
         
     }

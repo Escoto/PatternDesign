@@ -6,26 +6,13 @@ using System.Threading.Tasks;
 
 namespace FactoryExample
 {
-    class NotFoundPizza : IPizza
+    class NotFoundPizza : Pizza
     {
-        public void Bake()
-        {
+        public NotFoundPizza() {
+            pizzaName = "Sorry! we dont dell that pizza here.";
         }
 
-        public void Box()
-        {
-        }
+        public override void AddPizzeriaName(string pizzeriaName) { }
 
-        public void Cut()
-        {
-        }
-
-        public void Prepare()
-        {
-        }
-        public string Open()
-        {
-            return "Sorry! we dont dell that pizza here.";
-        }
     }
 }
