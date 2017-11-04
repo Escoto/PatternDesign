@@ -6,18 +6,50 @@ using System.Threading.Tasks;
 
 namespace SingletonExample
 {
-    class BasicSingleton
+    class Singleton
     {
-        private static BasicSingleton uniqueInstance;
+        private static Singleton uniqueInstance;
+        
+        private Singleton() { }
 
-        private BasicSingleton() { }
-
-        public static BasicSingleton GetInstance() {
-
+        public static Singleton GetInstance()
+        {
             if (uniqueInstance == null)
-                uniqueInstance = new BasicSingleton();
-
+                uniqueInstance = new Singleton();
+            
             return uniqueInstance;
         }
+
+    }
+
+    class BasicSingletonA
+    {
+        private static BasicSingletonA uniqueInstanceA;
+        
+        private BasicSingletonA() { }
+
+        public static BasicSingletonA GetInstanceA()
+        {
+            if(uniqueInstanceA == null)
+                lock (uniqueInstanceA) {
+                    uniqueInstanceA = new BasicSingletonA();
+                }
+
+            return uniqueInstanceA;
+        }
+        
+    }
+
+    class BasicSingletonB
+    {
+        private static BasicSingletonB uniqueInstanceB
+            = new BasicSingletonB();
+
+        private BasicSingletonB() { }
+        
+
+        public static BasicSingletonB GetInstanceB()
+            => uniqueInstanceB;
+
     }
 }
