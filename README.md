@@ -1,11 +1,15 @@
 # Pattern Design Practice
 
-## Description
 I created this solution to practice and learn more about pattern design
+
+## Getting Started
+
+* Clone [https://github.com/Escoto/PatternDesign.git](https://github.com/Escoto/PatternDesign.git)
+* Download [https://github.com/Escoto/PatternDesign/archive/master.zip](https://github.com/Escoto/PatternDesign/archive/master.zip)
 
 Main is inside [PatternsExamples](https://github.com/Escoto/PatternDesign/tree/master/PatternsExamples) in the [Root.cs](https://github.com/Escoto/PatternDesign/blob/master/PatternsExamples/Root.cs) file.
 
-### LEARNED DESIGN PRINCIPLES
+## LEARNED DESIGN PRINCIPLES
 
 * Identify the aspects of your application that vary and separate them from what stays the same.
 * Program to an interface, not an implementation.
