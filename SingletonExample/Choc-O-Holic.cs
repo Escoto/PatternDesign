@@ -11,7 +11,11 @@ namespace SingletonExample
     {
         public void Start()
         {
+            ChocolateBoiler boiler = ChocolateBoiler.GetInstance();
 
+            boiler.Fill();
+            boiler.Boil();
+            boiler.Drain();
         }
     }
 }

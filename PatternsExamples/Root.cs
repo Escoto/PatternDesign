@@ -13,7 +13,7 @@ namespace PatternsExamples
 
         public static void Main() {
 
-            Patterns toPractice = Patterns.Factory;
+            Patterns toPractice = Patterns.Singleton;
 
             switch (toPractice) {
                 case Patterns.Strategy:  run( new MiniDuckSimulator() );  break;

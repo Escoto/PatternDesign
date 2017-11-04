@@ -8,28 +8,46 @@ namespace SingletonExample
 {
     class ChocolateBoiler
     {
+        private static ChocolateBoiler uniqueBiler;
         private bool empty;
         private bool boiled;
 
-        public ChocolateBoiler() {
+        private ChocolateBoiler() {
             empty = true;
             boiled = false;
         }
 
+        public static ChocolateBoiler GetInstance() {
+            if (uniqueBiler == null)
+                uniqueBiler = new ChocolateBoiler();
+
+            return uniqueBiler;
+        }
+
         public void Fill() {
-            if (isEmpty())
+            if (isEmpty()) {
                 empty = false;
+                boiled = false;
+
+                Console.WriteLine("Filling Boiler with Mixture");
+            }
         }
 
         public void Boil() {
             if (!isEmpty() && !isBoiled())
+            {
                 boiled = true;
+
+                Console.WriteLine("Boiling Mixture in Boiler");
+            }
         }
         
         public void Drain() {
             if (!isEmpty() && isBoiled()) {
                 empty = true;
                 boiled = false;
+
+                Console.WriteLine("Draining Boiler's Mixture");
             }
         }
 
