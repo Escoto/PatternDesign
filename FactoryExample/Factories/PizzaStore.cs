@@ -9,7 +9,7 @@ namespace FactoryExample
 {
     public abstract class PizzaStore
     {
-        public enum PizzaType { Cheese, Greek, Pepperoni };
+        public enum PizzaType { Cheese, Greek, Pepperoni, CaliforniaGreek, CaliforniaPepperoni };
 
         public Pizza OrderPizza(PizzaType type) {
 

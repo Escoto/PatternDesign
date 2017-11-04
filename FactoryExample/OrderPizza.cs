@@ -13,17 +13,27 @@ namespace FactoryExample
         public void Start()
         {
             PizzaStore californiaStore = new CaliforniaPizzaFactory();
-            Pizza pepperoni = californiaStore.OrderPizza(PizzaStore.PizzaType.Pepperoni);
+            PizzaStore chicagoStore = new ChicagoPizzaFactory();
+
+            
+            //California's pepperoni pizza
+            Pizza pepperoni = californiaStore.OrderPizza(PizzaStore.PizzaType.CaliforniaPepperoni);
             servePizza(pepperoni);
 
-            PizzaStore chicagoStore = new ChicagoPizzaFactory();
+            Console.WriteLine();
+            
+            //In chicago with generic pizzas
             Pizza greek = chicagoStore.OrderPizza(PizzaStore.PizzaType.Greek);
             servePizza(greek);
 
+            Console.WriteLine();
+
+            //They dont sell cheese in california :(
+            Pizza cheese = californiaStore.OrderPizza(PizzaStore.PizzaType.Cheese);
+            servePizza(cheese);
         }
 
-        private void servePizza(Pizza pizza)
-            => Console.WriteLine(pizza.Open());
+        private void servePizza(Pizza pizza) => Console.WriteLine(pizza.Open());
 
     }
 }

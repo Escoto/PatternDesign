@@ -12,14 +12,11 @@ namespace FactoryExample
         {
             Pizza pizza;
             switch (type) {
-                case PizzaType.Cheese:
-                    pizza = pizza<CheesePizza>();//new CheesePizza(); 
+                case PizzaType.CaliforniaGreek:
+                    pizza = new CaliforniaGreekPizza(new CaliforniaIngredients());
                     break;
-                case PizzaType.Greek:
-                    pizza = pizza<GreekPizza>();
-                    break;
-                case PizzaType.Pepperoni:
-                    pizza = pizza<PepperoniPizza>();
+                case PizzaType.CaliforniaPepperoni:
+                    pizza = new CaliforniaPepperoniPizza(new CaliforniaIngredients());
                     break;
                 default: pizza = pizza<NotFoundPizza>();
                     break;

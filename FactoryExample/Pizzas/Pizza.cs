@@ -8,9 +8,13 @@ namespace FactoryExample
 {
     public abstract class Pizza
     {
+        public IIngredientFactory ingredientFactory = new DefaultPizzaIngredients();
         public string pizzaName;
 
-        public virtual void Prepare() { }
+        public virtual void Prepare() {
+            ingredientFactory.PrepareDough();
+            ingredientFactory.PrepareSauce();
+        }
 
         public virtual void Bake() { }
 

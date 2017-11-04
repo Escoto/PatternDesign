@@ -8,8 +8,15 @@ namespace FactoryExample
 {
     class NotFoundPizza : Pizza
     {
+        public override void Prepare() { }
+        public override void Bake() { }
+
+        public override void Cut() { }
+
+        public override void Box() { }
+
         public NotFoundPizza() {
-            pizzaName = "Sorry! we dont dell that pizza here.";
+            pizzaName = "Sorry! we dont sell that pizza here.";
         }
 
         public override void AddPizzeriaName(string pizzeriaName) { }

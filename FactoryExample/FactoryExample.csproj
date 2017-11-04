@@ -43,7 +43,12 @@
     <Compile Include="Factories\CaliforniaPizzaFactory.cs" />
     <Compile Include="Factories\ChicagoPizzaFactory.cs" />
     <Compile Include="Factories\NYPizzaFactory.cs" />
+    <Compile Include="Ingredients\CaliforniaIngredients.cs" />
+    <Compile Include="Ingredients\DefaultPizzaIngredients.cs" />
+    <Compile Include="Ingredients\IIngredientFactory.cs" />
     <Compile Include="OrderPizza.cs" />
+    <Compile Include="Pizzas\CaliforniaPizzas\CaliforniaGreekPizza.cs" />
+    <Compile Include="Pizzas\CaliforniaPizzas\CaliforniaPepperoniPizza.cs" />
     <Compile Include="Pizzas\CheesePizza.cs" />
     <Compile Include="Pizzas\GreekPizza.cs" />
     <Compile Include="Pizzas\Pizza.cs" />
