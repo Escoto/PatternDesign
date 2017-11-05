@@ -12,25 +12,28 @@ namespace CommandExample
         List<ControlButton> buttons = new List<ControlButton>();
         Garage garage = new Garage();
         Light light = new Light();
-        ICommand command;
-
+        
         public RemoteControl() {
-            for (int i = 0; i<10; i++) {
+            for (int i = 0 ; i < 10 ; i++) 
                 buttons.Add(new ControlButton(new NoCommand()));
-            }
         }
 
         public void Start()
         {
-            //set coomand Light On
-            command = new LightOnCommand(light);
-            buttons[0].SetCommand(command);
-            buttons[0].buttonWasPressed();
+            SetCommand(0, new LightOnCommand(light));
+            SetCommand(1, new LightOffCommand(light));
+            SetCommand(2, new GarageOpenCommand(garage));
 
-            //set command Garage Open
-            command = new GarageOpenCommand(garage);
-            buttons[1].SetCommand(command);
-            buttons[1].buttonWasPressed();
+            ButtonWasPushed(0);
+            ButtonWasPushed(1);
+            ButtonWasPushed(2); //button 2 is not mapped to any command
         }
+
+        public void SetCommand(int slot, ICommand onCommand)
+            => buttons[slot].SetCommand(onCommand);
+
+
+        public void ButtonWasPushed(int btn)
+            => buttons[btn].buttonWasPressed();
     }
 }

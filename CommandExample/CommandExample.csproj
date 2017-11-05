@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\GarageOpenCommand.cs" />
+    <Compile Include="Commands\LightOffCommand.cs" />
     <Compile Include="Commands\NoCommand.cs" />
     <Compile Include="Objects\Garage.cs" />
     <Compile Include="Commands\ICommand.cs" />
