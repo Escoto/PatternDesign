@@ -15,5 +15,8 @@ namespace CommandExample
 
         public void Execute()
             => light.Off();
+
+        public void Undo()
+             => light.On();
     }
 }

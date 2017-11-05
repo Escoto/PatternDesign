@@ -16,5 +16,8 @@ namespace CommandExample
 
         public void Execute()
             => garage.Open();
+
+        public void Undo()
+            => garage.Close();
     }
 }

@@ -18,7 +18,10 @@ namespace CommandExample
         public void SetCommand(ICommand command)
             => slot = command;
 
-        public void buttonWasPressed()
+        public void Execute()
             => slot.Execute();
+
+        public void ExecuteUndo()
+            => slot.Undo();
     }
 }
