@@ -41,8 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\GarageOpenCommand.cs" />
+    <Compile Include="Commands\NoCommand.cs" />
     <Compile Include="Objects\Garage.cs" />
-    <Compile Include="ICommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Objects\Light.cs" />
     <Compile Include="Commands\LightOnCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

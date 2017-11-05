@@ -10,7 +10,10 @@ namespace CommandExample
     {
         ICommand slot;
 
-        public ControlButton() { }
+        public ControlButton(ICommand command)
+        {
+            slot = command;
+        }
         
         public void SetCommand(ICommand command)
             => slot = command;

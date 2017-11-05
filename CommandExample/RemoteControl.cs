@@ -9,22 +9,28 @@ namespace CommandExample
 {
     public class RemoteControl : IInitialStep
     {
-        ControlButton button = new ControlButton();
+        List<ControlButton> buttons = new List<ControlButton>();
         Garage garage = new Garage();
         Light light = new Light();
         ICommand command;
+
+        public RemoteControl() {
+            for (int i = 0; i<10; i++) {
+                buttons.Add(new ControlButton(new NoCommand()));
+            }
+        }
 
         public void Start()
         {
             //set coomand Light On
             command = new LightOnCommand(light);
-            button.SetCommand(command);
-            button.buttonWasPressed();
+            buttons[0].SetCommand(command);
+            buttons[0].buttonWasPressed();
 
             //set command Garage Open
             command = new GarageOpenCommand(garage);
-            button.SetCommand(command);
-            button.buttonWasPressed();
+            buttons[1].SetCommand(command);
+            buttons[1].buttonWasPressed();
         }
     }
 }
