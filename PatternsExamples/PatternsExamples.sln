@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryExample", "..\Factor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonExample", "..\SingletonExample\SingletonExample.csproj", "{80475867-4896-4E21-B85F-06E8DDC4F700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandExample", "CommandExample\CommandExample.csproj", "{541F2548-5AE6-4D2D-8251-41120A34FFE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandExample", "..\CommandExample\CommandExample.csproj", "{541F2548-5AE6-4D2D-8251-41120A34FFE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommandExample\CommandExample.csproj">
+      <Project>{541f2548-5ae6-4d2d-8251-41120a34ffe5}</Project>
+      <Name>CommandExample</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DecoratorExample\DecoratorExample.csproj">
       <Project>{4d2fcd03-b27d-4cde-8bb0-267f832dc636}</Project>
       <Name>DecoratorExample</Name>
@@ -70,10 +74,6 @@
     <ProjectReference Include="..\SingletonExample\SingletonExample.csproj">
       <Project>{80475867-4896-4e21-b85f-06e8ddc4f700}</Project>
       <Name>SingletonExample</Name>
-    </ProjectReference>
-    <ProjectReference Include="CommandExample\CommandExample.csproj">
-      <Project>{541f2548-5ae6-4d2d-8251-41120a34ffe5}</Project>
-      <Name>CommandExample</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
