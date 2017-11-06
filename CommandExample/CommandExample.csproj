@@ -40,13 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\GarageOpenCommand.cs" />
-    <Compile Include="Commands\LightOffCommand.cs" />
+    <Compile Include="Commands\CeilingFanCommands\CeilingFanCommand.cs" />
+    <Compile Include="Commands\CeilingFanCommands\CeilingFanOffCommand.cs" />
+    <Compile Include="Commands\CeilingFanCommands\CeilingFanLowCommand.cs" />
+    <Compile Include="Commands\CeilingFanCommands\CeilingFanMediumCommand.cs" />
+    <Compile Include="Commands\CeilingFanCommands\CeilingFanHighCommand.cs" />
+    <Compile Include="Commands\GarageCommands\GarageCloseCommand.cs" />
+    <Compile Include="Commands\GarageCommands\GarageOpenCommand.cs" />
+    <Compile Include="Commands\LightCommands\LightOffCommand.cs" />
     <Compile Include="Commands\NoCommand.cs" />
+    <Compile Include="Objects\CeilingFan.cs" />
     <Compile Include="Objects\Garage.cs" />
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Objects\Light.cs" />
-    <Compile Include="Commands\LightOnCommand.cs" />
+    <Compile Include="Commands\LightCommands\LightOnCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoteControl.cs" />
     <Compile Include="ControlButton.cs" />

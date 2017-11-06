@@ -9,11 +9,12 @@ namespace CommandExample
 {
     public class RemoteControl : IInitialStep
     {
-        readonly int buttonNumber = 3;
+        readonly int buttonNumber = 10;
         List<ControlButton> buttons;
         ControlButton undoButton;
         Garage garage = new Garage();
         Light light = new Light();
+        CeilingFan ceilingFan = new CeilingFan("Here");
 
         public RemoteControl() {
             buttons = Enumerable
@@ -29,10 +30,24 @@ namespace CommandExample
             SetCommand(0, new LightOnCommand(light));
             SetCommand(1, new LightOffCommand(light));
             SetCommand(2, new GarageOpenCommand(garage));
+            SetCommand(3, new GarageCloseCommand(garage));
+            SetCommand(4, new CeilingFanOffCommand(ceilingFan));
+            SetCommand(5, new CeilingFanLowCommand(ceilingFan));
+            SetCommand(6, new CeilingFanMediumCommand(ceilingFan));
+            SetCommand(7, new CeilingFanHighCommand(ceilingFan));
 
             buttonWasPushed(0);
-            undoWasPushed();
+            buttonWasPushed(1);
             buttonWasPushed(2);
+            undoWasPushed();
+
+
+            buttonWasPushed(4);
+            buttonWasPushed(5);
+            undoWasPushed();
+            buttonWasPushed(6);
+            undoWasPushed();
+            buttonWasPushed(7);
             undoWasPushed();
         }
 
