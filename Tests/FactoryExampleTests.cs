@@ -10,7 +10,7 @@ namespace Tests
     {
         [TestMethod()]
         public void OrderPizza_can_be_instantiated() {
-            Assert.AreNotEqual(new OrderPizza(), null);
+            Assert.IsNotNull(new OrderPizza());
             Assert.IsInstanceOfType(new OrderPizza(), typeof(IInitialStep));
         }
 
