@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryExample
 {
-    class CaliforniaGreekPizza : Pizza
+    public class CaliforniaGreekPizza : Pizza
     {
         public CaliforniaGreekPizza(IIngredientFactory ingredientFactory) {
             this.ingredientFactory = ingredientFactory;

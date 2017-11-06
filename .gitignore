@@ -2,6 +2,7 @@
 **/obj
 **.suo
 **.ide
+**/packages
 
 # User-specific files
 *.suo
@@ -10,3 +11,6 @@
 *.sln.docstates
 *.ide
 
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*

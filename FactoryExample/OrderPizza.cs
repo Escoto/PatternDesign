@@ -14,7 +14,6 @@ namespace FactoryExample
         {
             PizzaStore californiaStore = new CaliforniaPizzaFactory();
             PizzaStore chicagoStore = new ChicagoPizzaFactory();
-
             
             //California's pepperoni pizza
             Pizza pepperoni = californiaStore.OrderPizza(PizzaStore.PizzaType.CaliforniaPepperoni);

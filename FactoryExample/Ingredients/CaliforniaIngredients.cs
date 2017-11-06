@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryExample
 {
-    class CaliforniaIngredients : IIngredientFactory
+    public class CaliforniaIngredients : IIngredientFactory
     {
         public void PrepareDough() => Console.WriteLine("Preparing California Style Dough");
 

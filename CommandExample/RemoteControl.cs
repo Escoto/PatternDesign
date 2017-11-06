@@ -9,17 +9,19 @@ namespace CommandExample
 {
     public class RemoteControl : IInitialStep
     {
-        
-        List<ControlButton> buttons = new List<ControlButton>();
-        ControlButton undo;
+        readonly int buttonNumber = 3;
+        List<ControlButton> buttons;
+        ControlButton undoButton;
         Garage garage = new Garage();
         Light light = new Light();
 
         public RemoteControl() {
-            undo = new ControlButton(new NoCommand());
+            buttons = Enumerable
+                .Range(0, buttonNumber)
+                .Select(x => new ControlButton())
+                .ToList();
 
-            for (int i = 0 ; i < 10 ; i++) 
-                buttons.Add(new ControlButton(new NoCommand()));
+            undoButton = new ControlButton();
         }
 
         public void Start()
@@ -38,11 +40,11 @@ namespace CommandExample
             => buttons[slot].SetCommand(onCommand);
         
         private void buttonWasPushed(int btn) {
-            undo = buttons[btn];
+            undoButton = buttons[btn];
             buttons[btn].Execute();
         }
 
         private void undoWasPushed()
-            => undo.ExecuteUndo();
+            => undoButton.ExecuteUndo();
     }
 }

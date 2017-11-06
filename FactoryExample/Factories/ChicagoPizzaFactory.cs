@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryExample
 {
-    class ChicagoPizzaFactory : PizzaStore
+    public class ChicagoPizzaFactory : PizzaStore
     {
         public override Pizza CreatePizza(PizzaType type)
         {
