@@ -40,7 +40,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapting.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Fly\FlyNoWay.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Fly\FlyRocketPowered.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Fly\FlyWithWings.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Fly\IFlyBehavior.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Quack\IQuackBehavior.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Quack\MuteQuack.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Quack\Quacks.cs" />
+    <Compile Include="DuckAdapterExample\Behaviors\Quack\Squeak.cs" />
+    <Compile Include="DuckAdapterExample\Ducks\Duck.cs" />
+    <Compile Include="DuckAdapterExample\Ducks\MallardDuck.cs" />
+    <Compile Include="DuckAdapterExample\Ducks\ModelDuck.cs" />
+    <Compile Include="DuckAdapterExample\OtherBirds\ITurkey.cs" />
+    <Compile Include="DuckAdapterExample\OtherBirds\TurkeyAdapter.cs" />
+    <Compile Include="DuckAdapterExample\OtherBirds\WildTurkey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyGenerics\MyGenerics.csproj">
+      <Project>{e36f0eff-595e-4c4a-8ee5-2e62b99055c5}</Project>
+      <Name>MyGenerics</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

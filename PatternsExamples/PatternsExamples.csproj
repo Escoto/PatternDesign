@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdapterExample\AdapterExample.csproj">
+      <Project>{564353ea-6e6b-4b88-9403-9079a74385a7}</Project>
+      <Name>AdapterExample</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CommandExample\CommandExample.csproj">
       <Project>{541f2548-5ae6-4d2d-8251-41120a34ffe5}</Project>
       <Name>CommandExample</Name>
