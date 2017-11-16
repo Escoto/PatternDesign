@@ -10,6 +10,7 @@
 *.userosscache
 *.sln.docstates
 *.ide
+.vs
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
